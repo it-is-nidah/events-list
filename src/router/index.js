@@ -7,22 +7,23 @@ const routes = [
   {
     path: "/",
     name: "events-list",
-    component: () => import("@/views/EventsList.vue"),
+    component: () => import("@/views/EventsList.vue")
   },
   {
-    path: "/events-show",
+    path: "/events/:id",
     name: "events-show",
     component: () => import("@/views/EventsShow"),
+    props: true
   },
   {
     path: "/events-create",
     name: "events-create",
-    component: () => import("@/views/EventsCreate.vue"),
-  },
-
+    component: () => import("@/views/EventsCreate.vue")
+  }
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes
 });
 
