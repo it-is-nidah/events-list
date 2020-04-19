@@ -3,7 +3,7 @@
     <div class="event-card -shadow">
       <span class="eyebrow">on {{ event.date }} @ {{event.time}}</span>
       <h4 class="title">{{ event.title }}</h4>
-      <BaseIcon name="users" /> <span>{{ event.attendees.lenght }} attending</span>
+      <BaseIcon name="users" >{{ event.attendees.length }} attending</BaseIcon>
     </div>
   </router-link>
 </template>
