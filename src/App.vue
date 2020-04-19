@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link :to="{ name: 'events-list' }">Events</router-link> |
-      <router-link :to="{ name: 'events-create' }">Create</router-link>
-    </div>
+    <NavBar />
     <router-view />
   </div>
 </template>
 
+<script>
+import NavBar from "@/components/NavBar.vue";
+export default {
+  components: {
+    NavBar
+  }
+};
+</script>
 <style>
 html {
   -webkit-text-size-adjust: 100%;
