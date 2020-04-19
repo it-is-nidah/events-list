@@ -2,6 +2,7 @@
   <div class="ents-list">
     <h1>Events list</h1>
     <EventCard />
+    <BaseIcon />
   </div>
 </template>
 
